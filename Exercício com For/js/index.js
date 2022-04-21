@@ -20,3 +20,31 @@ for (let i = 0; i < cont.length; i++) {
 }
 
 box.appendChild(newBox);
+
+
+////// Exercício For in
+
+const arquivo = [
+    {tag: 'h1', texto: 'Texto para a primeira tag'},
+    {tag: 'h6', texto: 'Texto para a segunda tag'},
+];
+
+const container = document.querySelector('.container');
+
+const criaDiv = document.createElement('div');
+
+for (let index in arquivo) {
+    
+    const {tag, texto} = arquivo[index];
+
+    const criaTag = document.createElement(tag);
+
+    criaTag.innerText = texto;
+
+    criaDiv.appendChild(criaTag);
+}
+
+container.appendChild(criaDiv)
+
+
+
