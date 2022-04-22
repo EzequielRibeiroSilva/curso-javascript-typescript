@@ -10,7 +10,6 @@ for (let i = 0; i < num.length; i++) {
     if (num[i] === 5) {
         break
     }
-
 }
 
 // continue continua para a próxima interação
