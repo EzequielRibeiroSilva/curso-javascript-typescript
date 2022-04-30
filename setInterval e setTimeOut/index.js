@@ -3,11 +3,11 @@
 
 //ex1
 
-// function mostraHora() {
-//     let data = new Date();
+function mostraHora() {
+    let data = new Date();
 
-//     return data.toLocaleTimeString('pt-BR', {hour12: false});
-// }
+    return data.toLocaleTimeString('pt-BR', {hour12: false});
+}
 
 // console.log(mostraHora()); // Esse console sempre que for executado, retornará a hora.
 //Mas nós temos como fazer essa execução se tornar automática.
@@ -18,15 +18,15 @@
 
 //ex2
 
-// function mostraHora() {
-//     let data = new Date();
+function mostraHora() {
+    let data = new Date();
 
-//     return data.toLocaleTimeString('pt-BR', {hour12: false});
-// }
+    return data.toLocaleTimeString('pt-BR', {hour12: false});
+}
 
-// setInterval(function () {    /// Exemplo de função anônima...
-//     console.log(mostraHora());
-// }, 1000);
+setInterval(function () {    /// Exemplo de função anônima...
+    console.log(mostraHora());
+}, 1000);
 
 // Repare que embora nossa função esteja realizando exatamente a tarefa que nós estavamos desejando, esse código ficou bastante longo. Vamos diminuí-lo... 
 // Nós podemos diminuir o código usando uma função anônima...
@@ -36,34 +36,34 @@
 // Nós também podemos colocar o setInterval dentro de uma variável.
 
 
-// function mostraHora() {
-//     let data = new Date();
+function mostraHora() {
+    let data = new Date();
 
-//     return data.toLocaleTimeString('pt-BR', {hour12: false});
-// }
+    return data.toLocaleTimeString('pt-BR', {hour12: false});
+}
 
-// const timer = setInterval(function () {    /// Exemplo de função anônima...
-//     console.log(mostraHora());
-// }, 1000);
+const timer = setInterval(function () {    /// Exemplo de função anônima...
+    console.log(mostraHora());
+}, 1000);
 
 // setTimeOut
 // O setTimeOut é uma função que é executada apenas uma vez. Ou seja, como o próprio nome já deixa claro, essa função vai ser usada para parar o nosso setInterval
 
 //ex1
 
-// function mostraHora() {
-//     let data = new Date();
+function mostraHora() {
+    let data = new Date();
 
-//     return data.toLocaleTimeString('pt-BR', {hour12: false});
-// }
+    return data.toLocaleTimeString('pt-BR', {hour12: false});
+}
 
-// const timer = setInterval(function () {    /// Exemplo de função anônima...
-//     console.log(mostraHora());
-// }, 1000);
+const timer = setInterval(function () {    /// Exemplo de função anônima...
+    console.log(mostraHora());
+}, 1000);
 
-// setTimeout(function() {
-//     clearInterval(timer);
-// }, 10000);
+setTimeout(function() {
+    clearInterval(timer);
+}, 10000);
 
 //ex2
 
